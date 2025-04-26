@@ -4,7 +4,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
   selector: '[appLowRateCard]',
 })
 export class LowRateCardDirective implements OnInit {
-  @Input('appLowRateCard') rate: number = 5;
+  @Input('appLowRateCard') rate!: number;
 
   constructor(private element: ElementRef) {}
 
