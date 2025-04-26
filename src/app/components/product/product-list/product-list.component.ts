@@ -1,9 +1,10 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Product } from '../../../interfaces/product';
+import { LowRateCardDirective } from '../../../directives/low-rate-card.directive';
 
 @Component({
   selector: 'app-product-list',
-  imports: [],
+  imports: [LowRateCardDirective],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
 })
@@ -24,7 +25,7 @@ export class ProductListComponent implements OnChanges {
       description: 'Precision and comfort at your fingertips.',
       imageURL:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Razer_Naga_Classic.jpg/1200px-Razer_Naga_Classic.jpg',
-      rate: 7,
+      rate: 2.5,
     },
     {
       id: Math.random(),
@@ -32,14 +33,14 @@ export class ProductListComponent implements OnChanges {
       description: 'Mechanical and silent options available.',
       imageURL:
         'https://i0.wp.com/hirosarts.com/wp-content/uploads/2022/11/Adata-Golden-Summoner-Kyeboard.jpg?resize=700%2C450&ssl=1',
-      rate: 7,
+      rate: 5,
     },
     {
       id: Math.random(),
       name: 'Headphones',
       description: 'Immersive audio for every gamer and creator.',
       imageURL: 'https://cdn.mos.cms.futurecdn.net/FqRbifB3n4pA85smeB4Z57.jpg',
-      rate: 7,
+      rate: 4,
     },
   ];
 
