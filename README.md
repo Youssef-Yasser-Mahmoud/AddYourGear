@@ -34,6 +34,7 @@ A responsive e-commerce web application built with **Angular** and styled using 
 - 🔐 **Authentication Pages**  
   - Login and Register components styled with Tailwind
   - Form inputs with focus support via label clicking
+  - Validation applied to all form fields using Angular Reactive Forms
 
 ---
 
