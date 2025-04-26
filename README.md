@@ -1,59 +1,86 @@
-# TASK
+# 🛍️ GearNest - Angular E-Commerce Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+A responsive e-commerce web application built with **Angular** and styled using **Tailwind CSS**. Users can browse products (PCs, mice, keyboards, headphones), log in/register, and add new products using an image URL.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
+
+- 🏠 **Home & About Pages**  
+  - Responsive layout with static content
+  - About page includes informative paragraphs
+
+- 📦 **Product Management**  
+  - Product Parent Component displays a form and list
+  - Product Form allows adding items with:
+    - Name
+    - Description
+    - Image URL
+    - Rating
+  - Product List displays all added products with dynamic data binding
+
+- 🌐 **Routing**
+  - Standalone component support using `loadComponent`
+  - Pages include Home, About, Products, Login, Register
+
+- 🌈 **Tailwind CSS Integration**
+  - Fully responsive design
+  - Modern UI with utility-first classes
+
+- 📄 **Reusable Components**
+  - Navigation Bar
+  - Footer with social icons (Facebook, LinkedIn, Instagram)
+
+- 🔐 **Authentication Pages**  
+  - Login and Register components styled with Tailwind
+  - Form inputs with focus support via label clicking
+
+---
+
+## 🛠️ Technologies Used
+
+- Angular 17 (Standalone Component support)
+- Tailwind CSS
+- TypeScript
+- Reactive Forms
+- Angular Router
+
+---
+
+## 📦 Getting Started
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/` to view the app.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📁 Folder Structure (Simplified)
 
-```bash
-ng generate component component-name
+```
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── home/
+│   │   │   ├── about/
+│   │   │   ├── login/
+│   │   │   ├── register/
+│   │   │   ├── product/
+│   │   │   │   ├── product-form
+│   │   │   │   ├── product-list
+│   │   │   ├── navbar/
+│   │   │   ├── footer/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🙌 Contributing
 
-## Building
+Pull requests are welcome! For major changes, please open an issue first.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Crafted with ❤️ using Angular and Tailwind.
