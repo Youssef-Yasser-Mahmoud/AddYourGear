@@ -1,1 +1,92 @@
-<p>register works!</p>
+<section
+  class="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+>
+  <div class="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-md">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-gray-900">Create an Account</h2>
+      <p class="mt-1 text-sm text-gray-600">
+        Please fill in the form to register
+      </p>
+    </div>
+    <form action="" class="space-y-4">
+      <div>
+        <label for="userName" class="block text-sm font-medium text-gray-700"
+          >Name</label
+        >
+        <input
+          id="userName"
+          type="text"
+          placeholder="Youssef"
+          name="userName"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <label for="phoneNumber" class="block text-sm font-medium text-gray-700"
+          >Phone Number</label
+        >
+        <input
+          id="phoneNumber"
+          type="tel"
+          placeholder="01156102445"
+          name="phoneNumber"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Email</label
+        >
+        <input
+          id="email"
+          type="email"
+          placeholder="Youssef@gmail.com"
+          name="email"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <label
+          for="userPassword"
+          class="block text-sm font-medium text-gray-700"
+          >Password</label
+        >
+        <input
+          id="userPassword"
+          type="password"
+          name="userPassword"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <label for="confirmedPw" class="block text-sm font-medium text-gray-700"
+          >Confirm Password</label
+        >
+        <input
+          id="confirmedPw"
+          type="password"
+          name="confirmedPw"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md"
+        >
+          Register
+        </button>
+      </div>
+      <div>
+        <a
+          >Already have an account?
+          <span
+            class="text-blue-600 hover:underline cursor-pointer"
+            routerLink="/login"
+            >login</span
+          ></a
+        >
+      </div>
+    </form>
+  </div>
+</section>
